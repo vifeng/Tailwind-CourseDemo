@@ -1,6 +1,32 @@
 <script setup lang="ts">
 const colors = [
   "slate",
+  "avocado",
+  "red",
+  "orange",
+  "amber",
+  "yellow",
+  "lime",
+  "green",
+  "emerald",
+  "teal",
+  "cyan",
+  "sky",
+  "blue",
+  "indigo",
+  "violet",
+  "purple",
+  "fuchsia",
+  "pink",
+  "rose",
+  "gray",
+  "neutral",
+  "stone",
+];
+const colors1 = [
+  "slate",
+  "avocado",
+  "sky",
   "gray",
   "zinc",
   "neutral",
@@ -26,6 +52,7 @@ const colors = [
 ];
 </script>
 <template>
+  <h1>This color palette don't work in tailwind 4</h1>
   <div class="flex items-stretch gap-3 mb-3">
     <div class="p-5 text-white bg-primary grow">Primary</div>
     <div class="p-5 text-white bg-secondary grow">Secondary</div>
@@ -34,7 +61,7 @@ const colors = [
   <div v-for="color in colors" :key="color" class="flex gap-3 mb-3">
     <div
       class="w-[10%] aspect-square text-sm text-black p-1"
-      :class="`bg-${color}-50`"
+      :class="`bg-[theme(colors.${color})]-50]`"
     >
       {{ color }}
     </div>

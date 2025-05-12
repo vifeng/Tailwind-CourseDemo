@@ -22,6 +22,8 @@
   </section>
 </template>
 <style scoped>
+@reference "../assets/index.css";
+
 div {
   @apply bg-gray-400 min-h-[100px] even:bg-gray-600 text-white text-center flex items-center justify-center;
 }

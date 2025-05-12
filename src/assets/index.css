@@ -1,4 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* set custom color values */
+  --color-primary: red;
+  --color-secondary: blue;
+  --color-accent: #ff00ff;
+
+  /* set custom color on a scale */
+  --color-avocado-50: oklch(0.99);
+  --color-avocado-100: oklch(0.98 0.02 131.28);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --color-avocado-700: oklch(0.33 0.08 118.34);
+  --color-avocado-800: oklch(0.24 0.06 119.06);
+  --color-avocado-900: oklch(0.23 0.06 123.85);
+  --color-avocado-950: oklch(0.23 0.06 123.85);
+
+  /* override existing colors */
+  --color-slate-100: oklch(0.84% 0.18 117.33);
+
+  /* Add new font stacks */
+  --font-display: "lobster", sans-serif;
+  --font-poppins: Poppins, sans-serif;
+  /* override existing font stacks */
+  --font-sans: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Add custom breakpoint */
+  --breakpoint-3xl: 1920px;
+  /* override existing breakpoints */
+  --breakpoint-md: 800px;
+}
+.semantic-class {
+  color: var(--color-primary);
+}
