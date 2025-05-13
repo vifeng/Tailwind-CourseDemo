@@ -67,6 +67,13 @@ const router = useRouter();
           >Prose Plugins</RouterLink
         >
       </li>
+      <li>
+        <RouterLink
+          to="/princingPlan"
+          class="visited:text-green-500 focus:outline-green-400"
+          >Pricing plan</RouterLink
+        >
+      </li>
     </ul>
     <hr class="my-2" />
   </div>

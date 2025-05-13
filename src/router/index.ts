@@ -36,6 +36,11 @@ const routes = [
     name: "prosePlugins",
     component: () => import("../views/ProsePlugin.vue"),
   },
+  {
+    path: "/princingPlan",
+    name: "princingPlan",
+    component: () => import("../views/PrincingPlan.vue"),
+  },
 ];
 
 const router = createRouter({
