@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@plugin '@tailwindcss/typography';
 
 @theme {
   /* set custom color values */
@@ -27,7 +28,8 @@
   --font-display: "lobster", sans-serif;
   --font-poppins: Poppins, sans-serif;
   /* override existing font stacks */
-  --font-sans: Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+  --font-sans:
+    Avenir, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   /* Add custom breakpoint */

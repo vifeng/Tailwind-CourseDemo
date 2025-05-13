@@ -3,6 +3,7 @@
   <!-- Which is an unofficial plugin  -->
   <!-- https://daisyui.com/docs/layout-and-typography/ -->
   <div class="prose prose-xl dark:prose-invert">
+    <!-- <div class="prose prose-xl dark:prose-invert prose-headings:text-pink-500"> -->
     <h1 id="heading-1">Heading 1</h1>
     <h2 id="heading-2">Heading 2</h2>
     <h3 id="heading-3">Heading 3</h3>
@@ -402,3 +403,10 @@
     </p>
   </div>
 </template>
+<style scoped>
+@reference "../assets/index.css";
+
+.prose h2 {
+  @apply text-pink-400;
+}
+</style>
