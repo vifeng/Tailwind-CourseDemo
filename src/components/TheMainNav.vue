@@ -60,6 +60,13 @@ const router = useRouter();
           >Fonts</RouterLink
         >
       </li>
+      <li>
+        <RouterLink
+          to="/prosePlugins"
+          class="visited:text-green-500 focus:outline-green-400"
+          >Prose Plugins</RouterLink
+        >
+      </li>
     </ul>
     <hr class="my-2" />
   </div>

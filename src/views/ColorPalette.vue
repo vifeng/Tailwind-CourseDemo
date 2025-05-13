@@ -61,7 +61,7 @@ const colors1 = [
   <div v-for="color in colors" :key="color" class="flex gap-3 mb-3">
     <div
       class="w-[10%] aspect-square text-sm text-black p-1"
-      :class="`bg-[theme(colors.${color})]-50]`"
+      :class="`bg-${color}-50`"
     >
       {{ color }}
     </div>

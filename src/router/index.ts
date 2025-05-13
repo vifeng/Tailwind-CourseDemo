@@ -31,6 +31,11 @@ const routes = [
     name: "Fonts",
     component: () => import("../views/Fonts.vue"),
   },
+  {
+    path: "/prosePlugins",
+    name: "prosePlugins",
+    component: () => import("../views/ProsePlugin.vue"),
+  },
 ];
 
 const router = createRouter({
