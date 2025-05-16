@@ -41,6 +41,16 @@ const routes = [
     name: "princingPlan",
     component: () => import("../views/PrincingPlan.vue"),
   },
+  {
+    path: "/shoppingCartCheckoutForm",
+    name: "shoppingCartCheckoutForm",
+    component: () => import("../views/ShoppingCartCheckoutForm.vue"),
+  },
+  {
+    path: "/cartCheckout",
+    name: "cartCheckout",
+    component: () => import("../views/CartCheckout.vue"),
+  },
 ];
 
 const router = createRouter({

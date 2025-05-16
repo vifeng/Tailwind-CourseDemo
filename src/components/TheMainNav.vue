@@ -10,7 +10,7 @@ const router = useRouter();
 
 <template>
   <div>
-    <div class="justify-between flex items-center">
+    <div class="flex items-center justify-between">
       <AppButton @click="router.push({ name: 'Home' })">Home</AppButton>
       <AppButton @click="router.back()">Back</AppButton>
       <AppButton @click="toggleDark()"> dark mode </AppButton>
@@ -72,6 +72,21 @@ const router = useRouter();
           to="/princingPlan"
           class="visited:text-green-500 focus:outline-green-400"
           >Pricing plan</RouterLink
+        >
+      </li>
+      <li>
+        <RouterLink
+          to="/shoppingCartCheckoutForm"
+          class="visited:text-green-500 focus:outline-green-400"
+          >My Shopping Cart Checkout Form</RouterLink
+        >
+      </li>
+      <li>
+        <RouterLink
+          to="/cartCheckout"
+          class="visited:text-green-500 focus:outline-green-400"
+          >Solution: Shopping Cart Checkout Form (transition, group, glow
+          hover...)</RouterLink
         >
       </li>
     </ul>

@@ -3,7 +3,7 @@ import { onMounted } from "vue";
 
 onMounted(() => {
   const tocList = document.getElementById(
-    "toc-list"
+    "toc-list",
   ) as HTMLUListElement | null;
   if (!tocList) return;
 
@@ -36,10 +36,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav id="toc" class="mb-8 p-4 bg-gray-100 rounded-lg">
-    <h1 class="text-lg font-semibold mb-2">Table of Contents</h1>
+  <nav id="toc" class="mb-8 rounded-lg bg-gray-100 p-4">
+    <h1 class="mb-2 text-lg font-semibold">Table of Contents</h1>
     <p>you should play with the size of the window viewport..</p>
-    <ul id="toc-list" class="list-disc list-inside space-y-1"></ul>
+    <ul id="toc-list" class="list-inside list-disc space-y-1"></ul>
   </nav>
   <hr />
 
@@ -54,9 +54,9 @@ onMounted(() => {
       <div class="bg-pink-300">1</div>
       <div class="bg-pink-600">2</div>
     </div>
-    <div class="flex gap-2 flex-col">
-      <div class="bg-pink-300">1</div>
-      <div class="bg-pink-600">2</div>
+    <div class="flex flex-col gap-2">
+      <div class="bg-avocado-300">1</div>
+      <div class="bg-avocado-600">2</div>
     </div>
   </section>
   <h2>vertical</h2>
@@ -64,18 +64,18 @@ onMounted(() => {
     <div
       v-for="i in 5"
       :key="i"
-      class="p-4 text-center text-white bg-amber-600 w-14 h-14"
+      class="h-14 w-14 bg-amber-600 p-4 text-center text-white"
     >
       {{ i }}
     </div>
   </section>
   <h1 class="font-bold">Contrôle de l'alignement</h1>
   <h2>vertical justify-around</h2>
-  <section class="flex flex-col gap-2 flex-wrap justify-around h-[30vh]">
+  <section class="flex h-[30vh] flex-col flex-wrap justify-around gap-2">
     <div
       v-for="i in 18"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-amber-950 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-amber-950 p-4 text-center text-white"
     >
       {{ i }}
     </div>
@@ -85,17 +85,17 @@ onMounted(() => {
     <div
       v-for="i in 15"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-amber-300 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-amber-300 p-4 text-center text-white"
     >
       {{ i }}
     </div>
   </section>
   <h2>justify</h2>
-  <section class="flex flex-wrap gap-2 justify-around">
+  <section class="flex flex-wrap justify-around gap-2">
     <div
       v-for="i in 20"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-emerald-200 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-emerald-200 p-4 text-center text-white"
     >
       {{ i }}
     </div>
@@ -105,7 +105,7 @@ onMounted(() => {
     <div
       v-for="i in 5"
       :key="i"
-      class="p-4 text-center text-white bg-blue-300 w-14 h-14"
+      class="h-14 w-14 bg-blue-300 p-4 text-center text-white"
     >
       {{ i }}
     </div>
@@ -115,7 +115,7 @@ onMounted(() => {
     <div
       v-for="i in 5"
       :key="i"
-      class="p-4 text-center text-white bg-blue-300 w-14 h-14"
+      class="h-14 w-14 bg-blue-300 p-4 text-center text-white"
     >
       {{ i }}
     </div>
@@ -125,7 +125,7 @@ onMounted(() => {
     <div
       v-for="i in 15"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-gray-500 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-gray-500 p-4 text-center text-white"
       :style="`height: ${i * 30 + 30}px`"
     >
       {{ i }}
@@ -136,7 +136,7 @@ onMounted(() => {
     <div
       v-for="i in 15"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-gray-500 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-gray-500 p-4 text-center text-white"
       :style="`height: ${i * 30 + 30}px`"
     >
       {{ i }}
@@ -144,12 +144,12 @@ onMounted(() => {
   </section>
   <h2>horizontal bars items center reversed</h2>
   <section
-    class="flex flex-wrap items-center flex-row-reverse justify-center gap-2"
+    class="flex flex-row-reverse flex-wrap items-center justify-center gap-2"
   >
     <div
       v-for="i in 15"
       :key="i"
-      class="flex-shrink-0 p-4 text-center text-white bg-gray-500 w-14 h-14"
+      class="h-14 w-14 flex-shrink-0 bg-gray-500 p-4 text-center text-white"
       :style="`height: ${i * 30 + 30}px`"
     >
       {{ i }}
