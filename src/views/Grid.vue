@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-4 gap-2 grid-flow-dense">
+  <section class="grid grid-flow-dense grid-cols-4 gap-2">
     <div class="col-span-2 !bg-green-600">1</div>
     <div class="row-span-2 !bg-green-600">2</div>
     <div>3</div>
@@ -25,6 +25,6 @@
 @reference "../assets/index.css";
 
 div {
-  @apply bg-gray-400 min-h-[100px] even:bg-gray-600 text-white text-center flex items-center justify-center;
+  @apply flex min-h-[100px] items-center justify-center bg-gray-400 text-center text-white even:bg-gray-600;
 }
 </style>
